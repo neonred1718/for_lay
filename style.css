@@ -1,0 +1,35 @@
+*{padding: 0; margin: 0;}
+.container{ height: 100vh;
+            width: 195vh;
+            color: #444;
+            background: #4d7852;
+            text-align: center; 
+              }
+
+              .no h4 {
+                white-space: pre; 
+                margin: 0;
+                font-size: 18px;
+                display: inline-block;
+            }
+            
+            .no img {
+                display: block;
+                margin-top: 20px;
+            }
+
+               
+.love, .yes, .no{
+    padding-top: 15%; }
+h2{font-size: 70px; margin-bottom: 30px;}
+.love span{color: #424242 ;}
+.love a{text-decoration: none;
+        background:#eee;
+        padding: 5px;
+        margin: 5px 10px;
+        border: 3px solid #ddd;
+        border-radius: 10px;
+}
+#no{color: rgb(244, 57, 57);}
+#yes{color: rgb(18, 243, 18);}
+img{height: 200px; width: 200px;}

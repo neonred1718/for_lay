@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"no" answer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="no">
+            <h4 id="textToType">Your device is being hacked... <br>All your files and important files will be terminated... <br>Your device will shut down in...<br>3<br>2<br> 
+                HAHAHAHAHA GOT YOUUU! I was just kidding... <br>still<br>HAPPY BIRTHDAY BAE! </h4>
+        </div>
+    </div>
+    
+    <script> 
+    document.addEventListener('DOMContentLoaded', function() {
+        const textToType = document.getElementById('textToType');
+        const sentences = textToType.innerText.split('\n'); 
+        textToType.innerHTML = ''; 
+    
+        typeText(sentences, 0);
+    });
+    
+    function typeText(sentences, index) {
+        const textToType = document.getElementById('textToType');
+        textToType.innerHTML += sentences[index] + '<br>';
+    
+        if (++index < sentences.length) {
+            setTimeout(() => typeText(sentences, index), 2000); 
+        }
+    }
+    </script>
+</body>
+</html>
